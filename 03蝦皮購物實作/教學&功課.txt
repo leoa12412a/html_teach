@@ -1,27 +1,27 @@
-�оǤ��e:
+教學內容:
 -------------------------
-�ϥ�bootstrap��rol�Pcol
-1.�����X�S��css���쪩
-2.�[�Wcard�Ӭ��[
-3.�ϥ�css��������}�G
+使用bootstrap的row與col
+1.先做出沒有css的初版
+2.加上card來美觀
+3.使用css讓版面更漂亮
 
-*�a�Bheader
+*懸浮header
 
-*style�R�W . �Ω�class
-	   # �Ω�id
-             ���򳣨S���Ω����
+*style命名 . 用於class
+	   # 用於id
+             什麼都沒有用於標籤
 
-*��������Ҫ��~�ӡA���٨S���չL
+*有提到標籤的繼承，但還沒測試過
 -------------------------
 
-�\��(�ѦҺ���:https://shopee.tw/)
+功課(參考網站:https://shopee.tw/)
 -------------------------
-1.�ϥ�Bootstrap 
-2.�ϥ� row �M col �ƪ� 
-3.�ܤ֭n������ 
-4.���泡���n��e�{�X��
+1.使用Bootstrap 
+2.使用 row 和 col 排版 
+3.至少要有雛形 
+4.網格部分要能呈現出來
 
-css�H�ά��[����
-�i�[�i���[
-(�ݦۤv��O)
+css以及美觀部分
+可加可不加
+(看自己能力)
 -------------------------
