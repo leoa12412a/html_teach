@@ -1,0 +1,37 @@
+﻿教學內容:
+-------------------------
+1. 使用 Font-Awesome 為版面+上所需icon(圖示)
+
+	*CSS包下載 下載地址:https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
+
+	*icon的選擇及使用 參考網址:https://fontawesome.com/icons?d=gallery&m=free
+	
+	*調整icon大小 參考網址:https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons
+
+2. 為選單加上 | 
+	
+	*只顯示外框的右側線條
+
+3. 搜尋列的製作
+
+	*背景使用純白
+	
+	*input 去除outline 與 外框
+
+	*Button搭配font-awesome的icon
+
+4. 訂正上次作業
+
+	*Meow -使用了margin導致排版錯誤
+
+	*Emma -加了外框線導致排版錯誤
+-------------------------
+
+功課(參考網站:https://shopee.tw/)-續
+-------------------------
+1.完成如圖之效果
+2.icon的部分圈選之處要使用font-awesome
+3.其餘使用自己的方式做出和圖相同內容
+
+ps:成品圖在資料夾裡
+-------------------------
