@@ -14,7 +14,7 @@
 		<div class="container-full" style="margin-top:5%;margin-right:5%;margin-left:5%">
 			<div class="row" >
 				<div class="col" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:510px;">
-					<h1  style="position: relative;top:46%;left:46%;" onclick="last()"><</h1>
+					<h1  style="position: relative;top:46%;left:46%;" ><</h1>
 				</div>
 				<div class="col-8" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:510px;">
 					<img src="img/1.jpg" id="img1" style="max-width:100%;max-height:100%;width:auto;height:auto;display:none;margin: auto;"></img>
@@ -24,7 +24,9 @@
 					<img src="img/5.jpg" id="img5" style="max-width:100%;max-height:100%;width:auto;height:auto;display:none;margin: auto;"></img>
 				</div>
 				<div class="col" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:510px;">
-					<h1 style="position: relative;top:46%;left:46%;" onclick="next()" >></h1>
+					<h1 style="position: relative;top:46%;left:46%;" onclick="next2()">
+						>
+					</h1>
 				</div>
 			</div>
 		</div>
@@ -35,48 +37,48 @@
 			var max = 5;
 			
 			var i;
-			
-			document.getElementById("img" + num).style.display = "block";
-			
-			function next()
+		
+			window.onload = function()
 			{
-				for(i=1;i<=max;i++)
-				{
-					document.getElementById("img" + i).style.display = "none";
-				}
+				document.getElementById("img" + num).style.display = "block";
+			}
+			
+			function next1()
+			{
+				document.getElementById("img" + num).style.display = "none";
 				
-				if(num == 5)
+				if(num == max)
 				{
 					num = 1;
 				}
 				else
 				{
-					num = num + 1;
+					num = num + 1 ;
 				}
-				
-				document.getElementById("img" + num).style.display = "block";
 	
+				document.getElementById("img" + num).style.display = "block";
 			}
 			
-			function last()
+			function next2()
 			{
 				for(i=1;i<=max;i++)
 				{
-					document.getElementById("img" + i).style.display = "none";
+					document.getElementById("img" + num).style.display = "none";
 				}
 				
-				if(num == 1)
+				if(num == max)
 				{
-					num = 5;
+					num = 1;
 				}
-				else 
+				else
 				{
-					num --;
+					num++;
 				}
 				
 				document.getElementById("img" + num).style.display = "block";
+				
 			}
-
+			
 		</script>
 		
 		<!-- Optional JavaScript -->
