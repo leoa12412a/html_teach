@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>js</title>
+  <script type="text/javascript"></script>
+ </head>
+ <body onload="init(); window.setTimeout('show_secs()',1);">  
+		<script src="/assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+		<script src="/assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+		<script src="/assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+		<script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="/assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+        <script language="javascript">  
+              
+            var second = 0;
+			
+			window.onload = function()
+			{
+				setInterval(time_now,1000);	
+			}
+			
+			function time_now()
+			{
+				second++;
+				console.log(second);
+				document.getElementById('time').value = second;
+			}
+			
+			window.onbeforeunload = function()
+			{
+				test();
+			}
+			
+			
+			function test()
+			{
+			   $.ajax({ 
+					url:"/index.php/welcome/test_post",  
+					method:"post",  
+					data:{"csrf_test_name":$.cookie("csrf_cookie_name"),'second':second}, 
+					dataType:"json",  
+					success:function(data){ 
+						
+					},
+					error: function (xhr) {
+						
+					}
+			   });
+			}
+             
+        </script>  
+        <form name="fm0" onsubmit="0">  
+            <font color="#888888" size="-1" onclick="test()">您在本網頁的停留時間:</font>  
+            <input type="text" name="text" size=7 id="time">  
+        </form>  
+    </body>  
+</html>
