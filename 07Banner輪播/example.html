@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		
+		<title>Hello, world!</title>
+	</head>
+	<body>
+		<div class="container-full" style="margin-top:5%;margin-right:5%;margin-left:5%">
+			<div class="row" >
+				<div class="col" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:510px;">
+					<h1  style="position: relative;top:46%;left:46%;" ><</h1>
+				</div>
+				<div class="col-8" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:510px;">
+					<img src="img/1.jpg" id="img1" style="max-width:100%;max-height:100%;width:auto;height:auto;display:none;margin: auto;"></img>
+					<img src="img/2.jpg" id="img2" style="max-width:100%;max-height:100%;width:auto;height:auto;display:none;margin: auto;"></img>
+					<img src="img/3.jpg" id="img3" style="max-width:100%;max-height:100%;width:auto;height:auto;display:none;margin: auto;"></img>
+					<img src="img/4.jpg" id="img4" style="max-width:100%;max-height:100%;width:auto;height:auto;display:none;margin: auto;"></img>
+					<img src="img/5.jpg" id="img5" style="max-width:100%;max-height:100%;width:auto;height:auto;display:none;margin: auto;"></img>
+				</div>
+				<div class="col" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:510px;">
+					<h1 style="position: relative;top:46%;left:46%;">
+						>
+					</h1>
+				</div>
+				
+			</div>
+			<div class="row" >
+				<div class="col" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:150px;">
+					<img src="img/1.jpg" id="img1_min" onclick="click_img(this)" style="max-width:100%;max-height:100%;width:auto;height:auto;display:black;margin: auto;"></img>
+				</div>
+				<div class="col" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:150px;">
+					<img src="img/2.jpg" id="img2_min" onclick="click_img(this)" style="max-width:100%;max-height:100%;width:auto;height:auto;display:black;margin: auto;"></img>
+				</div>
+				<div class="col" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:150px;">
+					<img src="img/3.jpg" id="img3_min" onclick="click_img(this)" style="max-width:100%;max-height:100%;width:auto;height:auto;display:black;margin: auto;"></img>
+				</div>
+				<div class="col" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:150px;">
+					<img src="img/4.jpg" id="img4_min" onclick="click_img(this)" style="max-width:100%;max-height:100%;width:auto;height:auto;display:black;margin: auto;"></img>
+				</div>
+				<div class="col" style="background-color:pink;border-color:red;border-width:thin;border-style:solid;height:150px;">
+					<img src="img/5.jpg" id="img5_min" onclick="click_img(this)" style="max-width:100%;max-height:100%;width:auto;height:auto;display:black	;margin: auto;"></img>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			var num = 1;
+			
+			var max = 5;
+		
+			window.onload = function(){
+				document.getElementById('img' + num).style.display = "block";
+				
+				setInterval(show,1000);
+			}
+			
+			function show()
+			{
+				document.getElementById('img' + num).style.display = "none";
+				
+				if(num < max)
+				{
+					num++;
+				}
+				else
+				{
+					num = 1;
+				}
+				
+				document.getElementById('img' + num).style.display = "block";
+			}
+
+			function click_img(img)
+			{	
+				var min_num = img.id.substr(3,1);
+				
+				document.getElementById('img' + num).style.display = "none";
+				
+				document.getElementById('img' + min_num).style.display = "block";
+				
+				num = min_num;
+			}
+
+
+		</script>
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	</body>
+</html>
