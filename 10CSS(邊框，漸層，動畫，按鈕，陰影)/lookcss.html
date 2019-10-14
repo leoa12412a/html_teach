@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>look-css</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-4" style="border: 3px solid">
+				<style>
+					#rcorners1 {
+						border-radius: 15px 50px 30px 5px;
+						background: #73AD21;
+						padding: 20px;
+						width: 200px;
+						height: 150px;
+					}
+
+					#rcorners2 {
+						border-radius: 15px 50px 30px;
+						background: #73AD21;
+						padding: 20px;
+						width: 200px;
+						height: 150px;
+					}
+
+					#rcorners3 {
+						border-radius: 15px 50px;
+						background: #73AD21;
+						padding: 20px;
+						width: 200px;
+						height: 150px;
+					}
+
+					#rcorners4 {
+						border-radius: 15px;
+						background: #73AD21;
+						padding: 20px;
+						width: 200px;
+						height: 150px;
+					}
+
+					#rcorners5 {
+						border-radius: 100% 100% 100% 100%;
+						background: rgb(241, 111, 5);
+						padding: 20px;
+						width: 200px;
+						height: 150px;
+					}
+
+					#rcorners6 {
+						border-radius: 100% 100% 100% 100%;
+						background: rgb(95, 85, 230);
+						padding: 20px;
+						width: 200px;
+						height: 200px;
+					}
+				</style>
+				<div class="row" style="border: 3px solid">
+					<div class="col">
+						<p>框的弧度 - border-radius (左上為基準順時針)</p>
+						<p>Four values - border-radius: 15px 50px 30px 5px:</p>
+						<p id="rcorners1"></p>
+
+						<p>Three values - border-radius: 15px 50px 30px:</p>
+						<p id="rcorners2"></p>
+
+						<p>Two values - border-radius: 15px 50px:</p>
+						<p id="rcorners3"></p>
+
+						<p>One value - border-radius: 15px:</p>
+						<p id="rcorners4"></p>
+
+						<p>Myself-01 - border-radius: 15px:</p>
+						<p id="rcorners5"></p>
+
+						<p>Myself-02 - border-radius: 15px:</p>
+						<p id="rcorners6"></p>
+					</div>
+				</div>
+				<div class="row">
+					<style>
+						.button001 {
+							display: inline-block;
+							/*如同float進階*/
+							text-align: center;
+							/*置中*/
+							vertical-align: middle;
+							/*垂直置中*/
+							padding: 12px 20px;
+							/*padding*/
+							border: 3px solid #784e28;
+							/*外框(粗度-類型-顏色)*/
+							border-radius: 10px;
+							/*外框(弧度)*/
+							background: #bb7d44;
+							background: -webkit-gradient(linear, left top, left bottom, from(#bb7d44), to(#734d2a));
+							background: -moz-linear-gradient(top, #bb7d44, #734d2a);
+							background: linear-gradient(to bottom, #bb7d44, #734d2a);
+							-webkit-box-shadow: #ad733e 0px 0px 40px 0px;
+							-moz-box-shadow: #ad733e 0px 0px 40px 0px;
+							box-shadow: #ad733e 0px 0px 40px 0px;
+							/*框的陰影*/
+							text-shadow: #48301a 0px 0px 2px;
+							/*文字陰影*/
+							font: normal normal bold 25px arial;
+							/*字型*/
+							color: #ffffff;
+							text-decoration: none;
+						}
+
+						/*直接接,等於都會觸發無論hover或是focus*/
+						.button001:hover,
+						.button001:focus {
+							border: 3px solid #c07d40;
+							background: #e09652;
+							background: -webkit-gradient(linear, left top, left bottom, from(#e09652), to(#8a5c32));
+							background: -moz-linear-gradient(top, #e09652, #8a5c32);
+							background: linear-gradient(to bottom, #e09652, #8a5c32);
+							color: #ffffff;
+							text-decoration: none;
+						}
+
+						/*點擊按下時*/
+						.button001:active {
+							background: #734d2a;
+							background: -webkit-gradient(linear, left top, left bottom, from(#734d2a), to(#734d2a));
+							background: -moz-linear-gradient(top, #734d2a, #734d2a);
+							background: linear-gradient(to bottom, #734d2a, #734d2a);
+						}
+
+						.button002 {
+							display: inline-block;
+							/*如同float進階*/
+							text-align: center;
+							/*置中*/
+							vertical-align: middle;
+							/*垂直置中*/
+							padding: 12px 20px;
+							/*padding*/
+							border: 10px solid #784e28;
+							/*     外框(粗度-類型-顏色)*/
+							border-radius: 10px;
+							/*外框(弧度)*/
+							background: #bb7d44;
+							background: -webkit-gradient(linear, left top, left bottom, from(#bb7d44), to(#734d2a));
+							background: -moz-linear-gradient(top, #bb7d44, #734d2a);
+							background: linear-gradient(to bottom, #bb7d44, #734d2a);
+							-webkit-box-shadow: #ad733e 0px 0px 40px 0px;
+							-moz-box-shadow: #ad733e 0px 0px 40px 0px;
+							box-shadow: #ad733e 0px 0px 40px 0px;
+							/*框的陰影*/
+							text-shadow: #48301a 0px 0px 2px;
+							/*文字陰影*/
+							font: normal normal bold 25px arial;
+							/*字型*/
+							color: #ffffff;
+							text-decoration: none;
+							border-image: url(img/border4.png) 15 round;
+						}
+
+						/*直接接,等於都會觸發無論hover或是focus*/
+						.button002:hover,
+						.button002:focus {
+							/* border: 10px solid #784e28;  */
+							background: #e09652;
+							background: -webkit-gradient(linear, left top, left bottom, from(#e09652), to(#8a5c32));
+							background: -moz-linear-gradient(top, #e09652, #8a5c32);
+							background: linear-gradient(to bottom, #e09652, #8a5c32);
+							color: #ffffff;
+							text-decoration: none;
+							border-image: url(img/border4.png) 15 round;
+						}
+
+						/*點擊按下時*/
+						.button002:active {
+
+							background: #734d2a;
+							background: -webkit-gradient(linear, left top, left bottom, from(#734d2a), to(#734d2a));
+							background: -moz-linear-gradient(top, #734d2a, #734d2a);
+							background: linear-gradient(to bottom, #734d2a, #734d2a);
+						}
+
+						.button003 {
+							display: inline-block;
+							/*如同float進階*/
+							text-align: center;
+							/*置中*/
+							vertical-align: middle;
+							/*垂直置中*/
+							padding: 12px 20px;
+							/*padding*/
+							border: 10px solid #784e28;
+							/*     外框(粗度-類型-顏色)*/
+							border-radius: 10px;
+							/*外框(弧度)*/
+							background: #bb7d44;
+							background: -webkit-gradient(linear, left top, left bottom, from(#bb7d44), to(#734d2a));
+							background: -moz-linear-gradient(top, #bb7d44, #734d2a);
+							background: linear-gradient(to bottom, #bb7d44, #734d2a);
+							-webkit-box-shadow: #ad733e 0px 0px 40px 0px;
+							-moz-box-shadow: #ad733e 0px 0px 40px 0px;
+							box-shadow: #ad733e 0px 0px 40px 0px;
+							/*框的陰影*/
+							text-shadow: #48301a 0px 0px 2px;
+							/*文字陰影*/
+							font: normal normal bold 25px arial;
+							/*字型*/
+							color: #ffffff;
+							text-decoration: none;
+							border-image: url(img/border4.png) 27 round;
+						}
+
+						/*直接接,等於都會觸發無論hover或是focus*/
+						.button003:hover,
+						.button003:focus {
+							/* border: 10px solid #784e28;  */
+							background: #e09652;
+							background: -webkit-gradient(linear, left top, left bottom, from(#e09652), to(#8a5c32));
+							background: -moz-linear-gradient(top, #e09652, #8a5c32);
+							background: linear-gradient(to bottom, #e09652, #8a5c32);
+							color: #ffffff;
+							text-decoration: none;
+							border-image: url(img/border4.png) 25 round;
+						}
+
+						/*點擊按下時*/
+						.button003:active {
+
+							background: #734d2a;
+							background: -webkit-gradient(linear, left top, left bottom, from(#734d2a), to(#734d2a));
+							background: -moz-linear-gradient(top, #734d2a, #734d2a);
+							background: linear-gradient(to bottom, #734d2a, #734d2a);
+						}
+					</style>
+					<div class="col-12" style="border: 3px solid;padding-bottom: 10px">
+						<p>自製btn01 參考:http://buttonoptimizer.com/</p>
+						<a class="button001" style="color: white">確認登入</a>
+					</div>
+					<div class="col-12" style="border: 3px solid;padding-bottom: 10px">
+						<p>進階btn02</p>
+						<a class="button002" style="color: white">確認登入</a>
+					</div>
+					<div class="col-12" style="border: 3px solid;padding-bottom: 10px">
+						<p>變化btn03</p>
+						<a class="button003" style="color: white">確認登入</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-4" style="border: 3px solid">
+				<div class="row" style="border: 3px solid">
+					<style>
+						#borderimg1 {
+							border: 10px solid transparent;
+							padding: 15px;
+							border-image: url(img/border.png) 50 round;
+						}
+
+						#borderimg2 {
+							border: 10px solid transparent;
+							padding: 15px;
+							border-image: url(img/border.png) 20% round;
+						}
+
+						#borderimg3 {
+							border: 10px solid transparent;
+							padding: 15px;
+							border-image: url(img/border.png) 30% round;
+						}
+
+						#borderimg4 {
+							border: 10px solid transparent;
+							padding: 15px;
+							border-image: url(img/border2.png) 30% round;
+						}
+
+						#borderimg5 {
+							border: 10px solid transparent;
+							padding: 15px;
+							border-image: url(img/border3.png) 30% round;
+						}
+
+						#borderimg6 {
+							border: 10px solid transparent;
+							padding: 15px;
+							border-image: url(img/border6.png) 30% round;
+						}
+					</style>
+					<div class="col">
+						框引入圖片 - border-image
+						<p id="borderimg1">border-image: url(border.png) 50 round;</p>
+						<p id="borderimg2">border-image: url(border.png) 20% round;</p>
+						<p id="borderimg3">border-image: url(border.png) 30% round;</p>
+						<p id="borderimg4">border-image: url(border.png) 50 round;</p>
+						<p id="borderimg5">border-image: url(border.png) 20% round;</p>
+						<p id="borderimg6">border-image: url(border.png) 30% round;</p>
+					</div>
+				</div>
+				<div class="row" style="border: 3px solid">
+					<style>
+						#bordermyself01 {
+							border: 10px solid transparent;
+							padding: 15px;
+							border-image: url(img/border5.png) 15 round;
+						}
+						#bordermyself02 {
+							border: 10px solid transparent;
+							padding: 15px;
+							border-image: url(img/border5.png) 20 round;
+						}
+						#bordermyself03 {
+							border: 10px solid transparent;
+							padding: 15px;
+							border-image: url(img/border5.png) 30 round;
+						}
+						#bordermyself04 {
+							border: 10px solid transparent;
+							padding: 15px;
+							border-image: url(img/border5.png) 35 round;
+						}
+					</style>
+					<div class="col">
+						試做01
+						<p id="bordermyself01">border-image: url(border5.png) 50 round;</p>
+
+					</div>
+					<div class="col">
+						試做02
+						<p id="bordermyself02">border-image: url(border5.png) 50 round;</p>
+
+					</div>
+					<div class="col">
+						試做03
+						<p id="bordermyself03">border-image: url(border5.png) 50 round;</p>
+
+					</div>
+					<div class="col">
+						試做04
+						<p id="bordermyself04">border-image: url(border5.png) 50 round;</p>
+
+					</div>
+				</div>
+				<div class="row" style="border: 3px solid">
+					<style>
+						#grad1 {
+							height: 200px;
+							background-color: red;
+							/* For browsers that do not support gradients */
+							background-image: linear-gradient(red, yellow);
+							/* Standard syntax (must be last) */
+						}
+
+						#grad2 {
+							height: 55px;
+							background-color: red;
+							/* For browsers that do not support gradients */
+							background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+							/* Standard syntax (must be last) */
+						}
+
+						#grad3 {
+							height: 200px;
+							background-color: red;
+							/* For browsers that do not support gradients */
+							background-image: linear-gradient(red, yellow, green);
+							/* Standard syntax (must be last) */
+						}
+
+						#grad4 {
+							height: 200px;
+							/* background-color: rgb(67, 74, 173); */
+							/* For browsers that do not support gradients */
+							background-image: linear-gradient(blue, red, yellow, green, black);
+							/* Standard syntax (must be last) */
+						}
+					</style>
+					<div class="col">
+						背景漸層 - background-image: linear-gradient
+						<div id="grad1"></div>
+						<br>
+						<div id="grad2"></div>
+						<br>
+						<div id="grad3"></div>
+						<br>
+						<div id="grad4"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-4" style="border: 3px solid">
+				<div class="row" style="border: 3px solid">
+					<style>
+						#p1 {
+							background-color: hsl(120, 100%, 75%);
+						}
+
+						#p2 {
+							background-color: hsla(120, 100%, 75%, 0.5);
+						}
+
+						#p3 {
+							background-color: rgb(0, 255, 0);
+							opacity: 0.6;
+						}
+					</style>
+					<div class="col">
+						1.hsl & hsal
+						<p id="p1">hsl無透明</p>
+						<p id="p2">hsl有透明</p>
+						2.rgb+透明度
+						<p id="p3">rgb有透明</p>
+					</div>
+				</div>
+				<div class="row" style="border: 3px solid">
+					<style>
+						.text01 {
+							text-shadow: 2px 2px;
+						}
+
+						.text02 {
+							text-shadow: 2px 2px 5px red;
+						}
+
+						.text03 {
+							color: white;
+							text-shadow: 2px 2px 4px #000000;
+						}
+
+						.box1 {
+							width: 300px;
+							height: 100px;
+							padding: 15px;
+							background-color: yellow;
+							box-shadow: 10px 10px 5px grey;
+						}
+
+						.box2 {
+							width: 300px;
+							height: 100px;
+							padding: 15px;
+							background-color: yellow;
+							box-shadow: 10px 10px grey;
+						}
+					</style>
+					<div class="col">
+						文字陰影 - text-shadow
+						<h1 class="text01">Border around text!</h1>
+						<h1 class="text02">Border around text!</h1>
+						<h1 class="text03">Border around text!</h1>
+						區塊陰影 - box-shadow
+						<div class="box1">陰影有光暈</div>
+						<br>
+						<div class="box2">陰影無光暈</div>
+						<br>
+					</div>
+				</div>
+				<div class="row" style="border: 3px solid">
+					<style>
+						.mydiv.test {
+							white-space: nowrap;
+							width: 200px;
+							overflow: hidden;
+							border: 1px solid #000000;
+						}
+
+						.mydiv.test:hover {
+							overflow: visible;
+						}
+					</style>
+					<div class="col">
+						<p>文字敘述過長以及顯示 text-overflow:</p>
+						<div class=" mydiv test" style="text-overflow:ellipsis;">This is some long text that will not
+							fit in
+							the box</div>
+						<br>
+						<div class=" mydiv test" style="text-overflow:clip;">This is some long text that will not fit in
+							the
+							box</div>
+						<br>
+					</div>
+				</div>
+				<div class="row" style="border: 3px solid">
+					<style>
+						.dynamic {
+							width: 100px;
+							height: 100px;
+							background: red;
+							-webkit-transition: width 2s;
+							/* For Safari 3.1 to 6.0 */
+							transition: width 2s;
+						}
+
+						.dynamic:hover {
+							width: 300px;
+						}
+
+						.dynamic2 {
+							width: 100px;
+							height: 100px;
+							background: red;
+							-webkit-transition: width 2s, height 4s;
+							/* For Safari 3.1 to 6.0 */
+							transition: width 2s, height 4s;
+						}
+
+						.dynamic2:hover {
+							width: 300px;
+							height: 300px;
+						}
+
+						.dynamic00 {
+							width: 100px;
+							height: 100px;
+							background: red;
+							-webkit-transition: width 2s;
+							/* Safari */
+							transition: width 2s;
+						}
+
+						/* For Safari 3.1 to 6.0 */
+						#dynamic01 {
+							-webkit-transition-timing-function: linear;
+						}
+
+						#dynamic02 {
+							-webkit-transition-timing-function: ease;
+						}
+
+						#dynamic03 {
+							-webkit-transition-timing-function: ease-in;
+						}
+
+						#dynamic04 {
+							-webkit-transition-timing-function: ease-out;
+						}
+
+						#dynamic05 {
+							-webkit-transition-timing-function: ease-in-out;
+						}
+
+						/* Standard syntax */
+						#dynamic01 {
+							transition-timing-function: linear;
+						}
+
+						#dynamic02 {
+							transition-timing-function: ease;
+						}
+
+						#dynamic03 {
+							transition-timing-function: ease-in;
+						}
+
+						#dynamic04 {
+							transition-timing-function: ease-out;
+						}
+
+						#dynamic05 {
+							transition-timing-function: ease-in-out;
+						}
+
+						.dynamic00:hover {
+							width: 300px;
+						}
+					</style>
+					<div class="col">
+						<p> 動態跑圖</p>
+						<div class="dynamic"></div>
+						<br>
+						<div class="dynamic2"></div>
+						<br>
+						<div class="dynamic00" id="dynamic01">linear</div><br>
+						<div class="dynamic00" id="dynamic02">ease</div><br>
+						<div class="dynamic00" id="dynamic03">ease-in</div><br>
+						<div class="dynamic00" id="dynamic04">ease-out</div><br>
+						<div class="dynamic00" id="dynamic05">ease-in-out</div><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
